@@ -13,10 +13,14 @@
 
 	$target = 'gold_ore';
 	$target = 'cobblestone';
+	$target = 'book';
 
-	$img = imagecreatefrompng(__DIR__.'/block/'.$target.'.png');
-	$w = imagesx($img);
-	$h = imagesy($img);
+	$src_img = imagecreatefrompng(__DIR__.'/'.$target.'.png');
+	$w = imagesx($src_img);
+	$h = imagesy($src_img);
+
+	$img = imagecreatetruecolor($w, $h);
+	imagecopy($img, $src_img, 0, 0, 0, 0, $w, $h);
 
 	$colors = [];
 
@@ -54,7 +58,7 @@
 		$col_hex = sprintf('%06x', $col_rgb);
 
 		echo "$col_hex -> \n";
-		for ($i=0; $i<=2; $i++){
+		for ($i=0; $i<20; $i++){
 			echo "\t{$list[$i]} ({$scores[$list[$i]]})\n";
 		}
 	}
