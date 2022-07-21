@@ -13,7 +13,7 @@
 
 	$target = 'gold_ore';
 	$target = 'cobblestone';
-	$target = 'book';
+	$target = 'block/tnt_side';
 
 	$src_img = imagecreatefrompng(__DIR__.'/'.$target.'.png');
 	$w = imagesx($src_img);
