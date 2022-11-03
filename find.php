@@ -14,6 +14,8 @@
 	$target = 'gold_ore';
 	$target = 'cobblestone';
 	$target = 'block/tnt_side';
+	$target = 'block/shulker_box';
+	$target = 'shulker_simple';
 
 	$src_img = imagecreatefrompng(__DIR__.'/'.$target.'.png');
 	$w = imagesx($src_img);
