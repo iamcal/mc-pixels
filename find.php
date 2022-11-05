@@ -16,6 +16,7 @@
 	$target = 'block/tnt_side';
 	$target = 'block/shulker_box';
 	$target = 'shulker_simple';
+	$target = 'simple_white_shulker';
 
 	$src_img = imagecreatefrompng(__DIR__.'/'.$target.'.png');
 	$w = imagesx($src_img);
